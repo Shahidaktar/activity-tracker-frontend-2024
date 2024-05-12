@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Tracker</title>
+    <style>
+      .container {
+        width: 450px;
+        max-height: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+
+        .toph1 {
+          font-family: cursive;
+          text-align: center;
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 10px;
+          color: rgb(48, 48, 48);
+          border-bottom: 2px solid rgb(225, 225, 225);
+        }
+
+        #btn1 {
+          color: rgb(241, 88, 88);
+          font-weight: bold;
+          font-size: 15px;
+          padding: 5px 10px;
+          background-color: rgb(252, 252, 252);
+          border: 1px solid black;
+          outline: none;
+        }
+
+        #btn1:hover {
+          background-color: rgb(245, 245, 245);
+          cursor: pointer;
+        }
+
+        #btn1:active {
+          background-color: rgb(175, 175, 175);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="toph1">Activity Tracker</h1>
+
+      <button id="btn1">SHOW URL SPENT TIME</button>
+      <table id="dataTable">
+        <thead>
+          <tr>
+            <th>URL</th>
+            <th>TIME SPENT</th>
+          </tr>
+        </thead>
+        <tbody id="dataBody">
+        </tbody>
+      </table>
+    </div>
+  </body>
+
+  <script src="./dashboard.js"></script>
+</html>
