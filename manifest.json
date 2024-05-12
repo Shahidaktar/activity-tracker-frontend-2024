@@ -5,21 +5,21 @@
   "description": "Track your online activity.",
   "permissions": ["tabs", "activeTab", "storage"],
   "background": {
-    "service_worker": "./client/background.js"
+    "service_worker": "./background.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "css": ["./client/content.css"],
-      "js": ["./client/content.js"]
+      "css": ["./content.css"],
+      "js": ["./content.js"]
     }
   ],
   "action": {
-    "default_popup": "./client/popup.html",
+    "default_popup": "./index.html",
     "default_icon": {
-      "16": "./client/icons/track.png",
-      "48": "./client/icons/track.png",
-      "128": "./client/icons/track.png"
+      "16": "./icons/track.png",
+      "48": "./icons/track.png",
+      "128": "./icons/track.png"
     }
   },
   "host_permissions": ["<all_urls>"]
